@@ -1,0 +1,354 @@
+*{
+    font-family: "Playfair Display", sans-serif;
+}
+
+/* Paleta de colores */
+:root{
+    --primario: #56070C;
+    --secundario: #f0e3d5;
+    --acento:#dbbb7ad2;         
+    --neutroOscuro:#000000e3;
+    --neutroClaro:#ffffdf;
+}
+
+
+
+/* New Colection */
+.index-nueva-coleccion{
+    background-color: var(--primario);  
+    align-items: center;     
+    text-align: center;    
+    padding: 1rem 2rem;
+}
+
+.index-nueva-coleccion-h2{
+    color:var(--secundario);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.index-nueva-coleccion-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;  
+    height: 20rem;
+}
+
+.index-nueva-coleccion-p{
+    text-align: center;
+    color: var(--neutroClaro);
+    font-size: 1.1rem;
+}
+
+.index-nueva-coleccion-btn{
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background-color: var(--acento);
+  color: var(--neutroClaro);
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Bestsellers & Sale */
+.index-bestsellers-h2, .index-sale-h3{
+    color: var(--primario);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+
+
+/* Sale */
+.index-sale-p{
+    text-align: center;
+    color: var(--neutroOscuro);
+    font-size: 1.1rem;
+}
+
+
+
+/* Cards */
+.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.1rem;
+  justify-content: space-around;
+}
+
+article{
+  display: flex;
+  flex: wrap; 
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  flex-direction: column;   
+  align-items: center;  
+  border-radius: 0.5rem;
+}
+
+article img {
+  width: 8rem;                   
+  height: 11rem;                
+  border-radius: 0.5rem;
+}
+
+article h3 {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0.25rem 0;
+  color: var(--primario);
+}
+
+article p {
+  font-size: 0.9rem;
+  color: var(--neutroOscuro);
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+article button {
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--acento);
+  color: var(--neutroClaro);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+article button:hover {
+  background-color: var(--primario);
+  transform: scale(1.05);
+}
+
+
+
+/* Newsletter */
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2.5rem 0rem;
+}
+
+.newsletter h4{
+  color: var(--acento);
+  margin: 0rem 0rem 1rem;
+  font-size: 1.7rem;
+}
+
+.newsletter p{
+  margin: 0rem 0rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.newsletter-btn{
+  background-color: var(--acento);
+  border:none;
+  border-radius: 2rem;
+  color: var(--neutroClaro);
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  background-color: var(--primario); 
+  padding: 40px 20px;
+  flex-wrap: wrap; 
+  gap: 30px; 
+}
+
+footer section {
+  flex: 1 1 250px; 
+  min-width: 200px;
+}
+
+footer h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--acento);
+}
+
+footer h6 {
+  margin: 5px 0;
+  color:var(--neutroClaro);
+  font-size: 0.9rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: var(--neutroClaro);
+  line-height: 1.4;
+}
+
+footer a {
+  display: block; 
+  color:var(--neutroClaro);
+  font-size: 0.7;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--acento); 
+}
+
+footer i {
+  font-size: 1.2rem;
+  color: var(--secundario);
+  background-color: var(--acento);
+  margin-top: 10px;
+  border-radius: 50%;
+  border-color: var(--acento);
+  padding: 0.6rem;
+}
+
+footer i:hover {
+  color: var(--primario); 
+}
+
+
+
+/* LENCERIA Y PRENDAS EXTERIORES */
+.lenceria-main-h2, .prendas-ext-main-h2{
+  color: var(--primario);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+
+
+/* Filtros */
+.filtro{
+  margin-bottom: 0.5rem;
+}
+
+.filtros-h3{
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--neutroOscuro);
+}
+
+.filtros-sct{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+label{
+  color: var(--neutroOscuro);
+  gap: 1rem;
+}
+
+select{             
+  color: var(--neutroOscuro);       /* EL RECUADRO */
+  border-style: solid;
+  border-color: var(--neutroOscuro);
+  border-radius: 2rem;
+  border-width: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  width: 10rem;
+}
+
+option{                     /* LO QUE SE DESPLIEGA */
+  background-color: var(--neutroClaro);
+}
+
+
+
+/* MODIFICACIONES NAV-BAR BOOTSTRAP */
+.bg-body-tertiary{
+  background-color: var(--acento)  !important;
+}
+
+.navbar-brand{
+  color: var(--primario);
+}
+
+.nav-link{
+  color: var(--neutroClaro);
+  font-weight: 450;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover{
+  color: var(--primario);
+}
+
+.search-icon{
+  color: var(--neutroClaro);
+}
+
+.btn-search {
+  border: 2px solid var(--neutroClaro);
+  background-color: transparent;
+}
+
+.btn-search:hover{
+  border: 2px solid var(--primario);
+  background-color: transparent;
+}
+
+
+
+/* MEDIAS QUERIES */
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+    justify-content: space-evenly;
+  }
+
+  article img {
+    width: 11rem;                   
+    height: 15rem;
+  }
+
+  article h3 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0.25rem 0;
+    color: var(--primario);
+  }
+}
+
+@media (min-width: 992px){
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+    justify-content: space-around;
+  }
+
+  article img {
+    width: 15rem;                   
+    height: 20rem;       
+  }
+
+  article h3 {
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+
+  article p {
+    font-size: 1rem;
+    color: var(--neutroOscuro);
+    margin: 0.25rem 0 0.5rem 0;
+  }
+
+  article button {
+    font-size: 1rem;
+  }
+}
