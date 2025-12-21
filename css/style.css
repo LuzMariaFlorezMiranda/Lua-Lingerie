@@ -73,7 +73,7 @@
 
 
 /* Cards */
-.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -223,7 +223,7 @@ footer i:hover {
 
 
 /* LENCERIA Y PRENDAS EXTERIORES */
-.lenceria-main-h2, .prendas-ext-main-h2{
+.lenceria-main-h2, .prendas-ext-main-h2, .accesorios-main-h2{
   color: var(--primario);
   font-size: 1.5rem;
   font-weight: 700;
