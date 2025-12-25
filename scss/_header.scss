@@ -1,0 +1,31 @@
+@use "./variables";
+@use "./mixins";
+
+.bg-body-tertiary{
+  background-color:  variables.$acento !important;
+}
+
+.navbar-brand{
+  color: variables.$primario;
+}
+
+.nav-link{
+  color: variables.$neutroClaro;
+  @include mixins.estilosTipografia(1.3rem,450);
+}
+
+.nav-link:hover{
+  color: variables.$primario;
+}
+
+.search-icon{
+  color: variables.$neutroClaro;
+}
+
+.btn-search {
+    @include mixins.boton(transparent, variables.$acento, 2px solid variables.$neutroClaro, cursor);
+}
+
+.btn-search:hover{
+    @include mixins.boton(transparent, variables.$acento, 2px solid variables.$primario, cursor);
+}

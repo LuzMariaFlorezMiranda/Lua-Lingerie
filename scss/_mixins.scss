@@ -1,0 +1,13 @@
+@mixin estilosTipografia($fs,$fw){
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin boton($bg, $color, $border, $cursor){
+    padding: 0.5rem 1rem;
+    border-radius:2rem;
+    background-color: $bg;
+    color: $color;
+    border: $border;
+    cursor: $cursor;
+}
