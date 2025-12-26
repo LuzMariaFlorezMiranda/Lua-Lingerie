@@ -1,0 +1,33 @@
+@use "./variables";
+@use "./mixins";
+
+.index-nueva-coleccion{
+    background-color: variables.$primario;  
+    align-items: center;     
+    text-align: center;    
+    padding: 1rem 2rem;
+}
+
+.index-nueva-coleccion-h2{
+    color: variables.$secundario;
+    @include mixins.estilosTipografia(1.6rem, 600); 
+    text-align: center;
+}
+
+.index-nueva-coleccion-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;  
+    height: 20rem;
+}
+
+.index-nueva-coleccion-p{
+    text-align: center;
+    color: variables.$neutroClaro;
+    @include mixins.estilosTipografia(1.2rem, 500); 
+}
+
+.index-nueva-coleccion-btn{
+    @include mixins.boton(variables.$acento, variables.$neutroClaro, none, pointer);
+    @include mixins.estilosTipografia(1rem, 450); 
+}
