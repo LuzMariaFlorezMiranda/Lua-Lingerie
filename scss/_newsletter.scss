@@ -1,0 +1,25 @@
+@use "./variables";
+@use "./mixins";
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.newsletter h4{
+    @include mixins.estilosTipografia(1.7rem, 500, variables.$acento, 0.5rem 0rem);
+}
+
+.newsletter p{
+    @include mixins.estilosTipografia(1.1rem, 400, variables.$neutroOscuro, 0.5rem 0rem);
+}
+
+.newsletter-btn{
+    @include mixins.boton(variables.$acento, none, pointer);
+    @include mixins.estilosTipografia(1.2rem, 450, variables.$neutroClaro, 0rem); 
+    @include mixins.hover-color(variables.$primario) {
+    background-color: variables.$neutroClaro;
+  }
+}

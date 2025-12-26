@@ -14,8 +14,7 @@
 }
 
 .nav-link{
-  color: variables.$neutroClaro;
-  @include mixins.estilosTipografia(1.3rem,450);
+  @include mixins.estilosTipografia(1.3rem,450, variables.$neutroClaro,0rem);
 }
 
 .nav-link:hover{
@@ -27,9 +26,9 @@
 }
 
 .btn-search {
-    @include mixins.boton(transparent, variables.$acento, 2px solid variables.$neutroClaro, cursor);
+    @include mixins.boton(transparent, 2px solid variables.$neutroClaro, cursor);
 }
 
 .btn-search:hover{
-    @include mixins.boton(transparent, variables.$acento, 2px solid variables.$primario, cursor);
+    @include mixins.boton(transparent, 2px solid variables.$primario, cursor);
 }

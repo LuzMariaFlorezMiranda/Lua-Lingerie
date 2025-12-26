@@ -1,0 +1,12 @@
+@use "./variables";
+@use "./mixins";
+
+.index-sale-h3{
+    @include mixins.estilosTipografia(1.5rem, 700, variables.$primario, 0.8rem);
+    text-align: center;
+}
+
+.index-sale-p{
+    @include mixins.estilosTipografia(1.1rem, 400, variables.$neutroOscuro, 0.5rem);
+    text-align: center;
+}

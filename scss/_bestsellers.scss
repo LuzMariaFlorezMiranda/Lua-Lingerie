@@ -1,0 +1,7 @@
+@use "./variables";
+@use "./mixins";
+
+.index-bestsellers-h2{
+    @include mixins.estilosTipografia(1.5rem, 700, variables.$primario, 0.8rem 0rem);
+    text-align: center;
+}

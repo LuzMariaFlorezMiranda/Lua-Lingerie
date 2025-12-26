@@ -1,13 +1,31 @@
-@mixin estilosTipografia($fs,$fw){
+@mixin estilosTipografia($fs,$fw,$c, $m){
     font-size: $fs;
     font-weight: $fw;
+    color: $c;
+    margin: $m;
 }
 
-@mixin boton($bg, $color, $border, $cursor){
+@mixin boton($bg, $border, $cursor){
     padding: 0.5rem 1rem;
     border-radius:2rem;
     background-color: $bg;
-    color: $color;
     border: $border;
     cursor: $cursor;
+}
+
+
+@mixin hover-color($color-hover, $transition: 0.3s ease) {
+  transition: color $transition, background-color $transition;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-hover;
+      @content;
+    }
+  }
+}
+
+@mixin img($w, $h){
+    width: $w;
+    height: $h;
 }
