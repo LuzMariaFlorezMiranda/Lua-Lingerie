@@ -7,18 +7,16 @@
 
 .navbar-brand{
   color: variables.$primario;
-}
-
-.navbar-brand:hover{
-    color: variables.$neutroClaro;
+  @include mixins.hover-color(variables.$neutroClaro) {
+    background-color: none;
+  }
 }
 
 .nav-link{
   @include mixins.estilosTipografia(1.3rem,450, variables.$neutroClaro,0rem);
-}
-
-.nav-link:hover{
-  color: variables.$primario;
+  @include mixins.hover-color(variables.$primario) {
+    background-color: none;
+  }
 }
 
 .search-icon{
@@ -27,8 +25,7 @@
 
 .btn-search {
     @include mixins.boton(transparent, 2px solid variables.$neutroClaro, cursor);
-}
-
-.btn-search:hover{
-    @include mixins.boton(transparent, 2px solid variables.$primario, cursor);
+    @include mixins.hover-color(variables.$neutroClaro) {
+    background-color: variables.$primario;
+  }
 }

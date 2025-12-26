@@ -2,7 +2,9 @@
 @use "./header";
 @use "./indexNuevaColeccion";
 @use "./cards";
-@use "./bestsellers";
-@use "./sale";
-@use "./newsletter";
-@use "./footer"
+@use "./indexBestsellers";
+@use "./indexSale";
+@use "./indexNewsletter";
+@use "./footer";
+@use "./h2PagesNavBar";
+@use "./filtros";

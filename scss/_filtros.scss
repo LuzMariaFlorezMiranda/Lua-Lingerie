@@ -1,0 +1,36 @@
+@use "./variables";
+@use "./mixins";
+
+.filtro{
+  margin-bottom: 0.5rem;
+}
+
+.filtros-h3{
+    @include mixins.estilosTipografia(1rem, 500, variables.$neutroOscuro, 0.5rem 0rem);
+}
+
+.filtros-sct{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+label{
+  color: variables.$neutroOscuro;
+  gap: 1rem;
+}
+
+select{             
+  color: variables.$neutroOscuro;  
+  border-style: solid;
+  border-color: variables.$neutroOscuro;
+  border-radius: 2rem;
+  border-width: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  width: 10rem;
+}
+
+option{                    
+  background-color: variables.$neutroOscuro;
+}
