@@ -1,0 +1,42 @@
+@use "./variables";
+@use "./mixins";
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+    justify-content: space-evenly;
+  }
+
+  article img {
+    @include mixins.img(11rem, 15rem);
+  }
+
+  article h3 {
+    @include mixins.estilosTipografia(1.1rem, 550, variables.$primario, 0.5rem 0rem);
+  }
+
+  article p {
+    @include mixins.estilosTipografia(1rem, 450, variables.$neutroOscuro, 0rem 0rem 0.3rem 0rem);
+  }
+}
+
+@media (min-width: 992px){
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main{
+    justify-content: space-around;
+  }
+
+  article img {
+    @include mixins.img(15rem, 20rem);     
+  }
+
+  article h3 {
+    @include mixins.estilosTipografia(1.2rem, 550, variables.$primario, 0.5rem 0rem);
+  }
+
+  article p {
+    @include mixins.estilosTipografia(1rem, 450, variables.$neutroOscuro, 0rem 0rem 0.3rem 0rem);
+  }
+
+  article button {
+    @include mixins.estilosTipografia(1rem, 500, variables.$neutroClaro, 0rem);
+  }
+}

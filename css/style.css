@@ -127,7 +127,7 @@ article img {
 
 article h3 {
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 500;
   color: #7a1824;
   margin: 0.3rem 0;
 }
@@ -335,6 +335,55 @@ select {
 
 option {
   background-color: rgba(0, 0, 0, 0.8901960784);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main {
+    justify-content: space-evenly;
+  }
+  article img {
+    width: 11rem;
+    height: 15rem;
+  }
+  article h3 {
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #7a1824;
+    margin: 0.5rem 0rem;
+  }
+  article p {
+    font-size: 1rem;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.8901960784);
+    margin: 0rem 0rem 0.3rem 0rem;
+  }
+}
+@media (min-width: 992px) {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main {
+    justify-content: space-around;
+  }
+  article img {
+    width: 15rem;
+    height: 20rem;
+  }
+  article h3 {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #7a1824;
+    margin: 0.5rem 0rem;
+  }
+  article p {
+    font-size: 1rem;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.8901960784);
+    margin: 0rem 0rem 0.3rem 0rem;
+  }
+  article button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffdf;
+    margin: 0rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

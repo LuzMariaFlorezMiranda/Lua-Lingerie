@@ -26,7 +26,7 @@ article img {
 }
 
 article h3 {
-  @include mixins.estilosTipografia(1rem, 550, variables.$primario, 0.3rem 0);
+  @include mixins.estilosTipografia(1rem, 500, variables.$primario, 0.3rem 0);
 }
 
 article p {
